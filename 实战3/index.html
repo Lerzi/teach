@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
+</head>
+
+<body>
+  <div id="list">
+
+  </div>
+  <button id="btn">点我</button>
+</body>
+
+<script>
+  // let el = $('#a')
+
+  // let str = '大傻逼'
+
+  // el.text(str)
+
+  // 后端来的
+  let data = [
+    {
+      id: 1,
+      href: 'https://www.baidu.com',
+      text: '百度'
+    },
+    {
+      id: 1,
+      href: 'https://www.bilibili.com',
+      text: '哔哩哔哩'
+    }
+  ]
+
+
+  let list = $('#list')
+
+  let str = ''
+
+  for (let i = 0; i < data.length; i++) {
+
+
+    str = str + `<a id="a" href="${data[i].href}">${data[i].text}</a> </br>`
+
+  }
+
+  list.html(str)
+
+
+  let btn = $('#btn')
+
+  $('#btn').click(function () {
+    list.append('<a id="a" href="https://www.baidu.com">百度</a> </br>')
+  })
+
+
+</script>
+
+</html>

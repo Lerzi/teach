@@ -1,0 +1,75 @@
+
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      html {
+        height: 100%;
+      }
+
+      body {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        background-color: #eee;
+      }
+
+      .warp {
+        width: 1000px;
+        height: 100%;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+        height: 100px;
+        border-bottom: 1px solid #000;
+      }
+
+      .header div {
+        width: 100px;
+        height: 100%;
+        background-color: aquamarine;
+      }
+
+      .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        gap: 10px;
+      }
+
+      .main div {
+        width: 100px;
+        height: 100px;
+        background-color: bisque;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="warp">
+      <div class="header">
+        <div></div>
+        <div></div>
+      </div>
+      <div class="main">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </body>
+
+  </html>
