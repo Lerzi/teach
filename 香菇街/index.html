@@ -34,6 +34,66 @@
       gap: 30px
     }
 
+
+    .search-bar {
+      height: 80px;
+      display: flex;
+      /* 每一项的对其方式  center：剧中 */
+      align-items: center;
+      /* 主轴上的对齐方式 */
+      justify-content: space-between;
+    }
+
+    .logo {
+      /* 宽度 */
+      width: 200px;
+      /* 字体大小 */
+      font-size: 36px;
+      /* 字重  理解成字体的粗细 */
+      font-weight: 900;
+      /* 字体颜色 */
+      color: rgb(149, 39, 57);
+    }
+
+    .search {
+      /* 边框： 2px 实线 颜色 */
+      border: 2px solid rgb(149, 39, 57)
+    }
+
+    .search input {
+      /* 边框 */
+      border: 0;
+      width: 300px;
+    }
+
+    .search input:focus-visible {
+      outline: 0;
+    }
+
+    .search button {
+      width: 120px;
+      height: 32px;
+      background-color: rgb(149, 39, 57);
+      color: #fff;
+      border: 0;
+    }
+
+    .cart {
+      /* 边框 粗细1px solid：实线  颜色 */
+      border: 2px solid #ccc;
+      /* 高度 */
+      height: 32px;
+      /* 宽度 */
+      width: 200px;
+      /* flex布局 */
+      display: flex;
+      /* 每一项的对齐方式 center居中 */
+      align-items: center;
+      /* 整体的对齐方式  center居中 */
+      justify-content: center;
+      color: rgb(149, 39, 57);
+    }
+
   </style>
 </head>
 
@@ -61,7 +121,18 @@
     </div>
   </div>
   <div class="container">
-    <div class="wrap"></div>
+    <div class="wrap search-bar">
+      <div class="logo">
+        香菇街
+      </div>
+      <div class="search">
+        <input type="text">
+        <button>搜索</button>
+      </div>
+      <div class="cart">
+        我的购物车
+      </div>
+    </div>
   </div>
   <div class="footer">
     <div class="wrap"></div>
