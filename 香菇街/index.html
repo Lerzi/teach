@@ -14,6 +14,7 @@
     }
 
     .wrap {
+      /* 给定一个宽度，margin上下为0 左右auto 可以实现居中 */
       width: 1100px;
       margin: 0 auto;
     }
@@ -94,27 +95,71 @@
       color: rgb(149, 39, 57);
     }
 
-
     .nav {
       display: flex;
+      /* space-between 两端对齐 */
+      justify-content: space-between;
     }
 
-    .menus {
+    .nav .menus {
       width: 200px;
       /* 背景颜色 */
-      background-color: rgb(147, 124, 124);
+      background-color: rgb(130, 108, 111);
     }
 
     .menus .item {
-      height: 50px;
-      /* 左边往里推 */
+      height: 40px;
+      /*  */
       padding-left: 20px;
       color: #fff;
     }
 
-    /* :hover 鼠标放上去的时候 才出现的样式 */
+
+
+    /* :hover 伪类 理解成 鼠标放上去才展示的样式 */
     .menus .item:hover {
-      background-color: rgb(53, 45, 45);
+      background-color: rgb(85, 71, 72);
+    }
+
+
+
+    .img-box {
+      width: 500px;
+      height: 300px;
+      background-color: rgb(85, 71, 72);
+      /* 圆角 */
+      border-radius: 10px;
+    }
+
+    .user {
+      width: 200px;
+      /* 边框 2像素粗细 solid实现 颜色 */
+      border: 2px solid #ccc;
+      /* 圆角 */
+      border-radius: 10px;
+      display: flex;
+      /* 主轴方向  */
+      flex-direction: column;
+      /* 单个居中 */
+      align-items: center;
+      /* 每个儿子的间隔 */
+      gap: 20px;
+      padding-top: 20px;
+    }
+
+    .user .avatar {
+      width: 50px;
+      height: 50px;
+      /* 圆角 */
+      border-radius: 50%;
+
+      background-color: #333;
+    }
+
+    .user .btn-box {
+      display: flex;
+      /* 每个儿子的间隔 */
+      gap: 20px;
     }
 
   </style>
@@ -158,15 +203,29 @@
     </div>
     <div class="wrap nav">
       <div class="menus">
-        <div class="item">
-          女装/内衣/奢品
-        </div>
-        <div class="item">
-          女装/内衣/奢品
+        <div class="item">女装/男装/袜子</div>
+        <div class="item">女装/男装/袜子</div>
+        <div class="item">女装/男装/袜子</div>
+        <div class="item">女装/男装/袜子</div>
+        <div class="item">女装/男装/袜子</div>
+        <div class="item">女装/男装/袜子</div>
+        <div class="item">女装/男装/袜子</div>
+      </div>
+      <div class="carousel">
+        <div class="img-box"></div>
+      </div>
+      <div class="user">
+        <div class="avatar"></div>
+        <div class="holle">Hi 你好呀</div>
+        <div class="btn-box">
+          <div class="login">
+            登录
+          </div>
+          <div class="sign-in">
+            注册
+          </div>
         </div>
       </div>
-      <div class="carousel">2</div>
-      <div class="user">3</div>
     </div>
   </div>
   <div class="footer">
