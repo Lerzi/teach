@@ -35,6 +35,12 @@
       gap: 30px
     }
 
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px
+    }
+
 
     .search-bar {
       height: 80px;
@@ -148,8 +154,8 @@
     }
 
     .user .avatar {
-      width: 50px;
-      height: 50px;
+      width: 60px;
+      height: 60px;
       /* 圆角 */
       border-radius: 50%;
 
@@ -160,6 +166,29 @@
       display: flex;
       /* 每个儿子的间隔 */
       gap: 20px;
+    }
+
+    .btn-box button {
+      border: 0;
+      color: #fff;
+      border-radius: 20px;
+      width: 80px;
+      height: 30px;
+    }
+
+    .btn-box .login {
+      background-color: rgb(149, 39, 57);
+    }
+
+    .btn-box .sign-in {
+      background: rgb(180, 119, 129);
+    }
+
+    .recommend .title {
+      font-size: 24px;
+      /* 左边边框 */
+      border-left: 10px solid rgb(149, 39, 57);
+      padding-left: 10px;
     }
 
   </style>
@@ -218,14 +247,24 @@
         <div class="avatar"></div>
         <div class="holle">Hi 你好呀</div>
         <div class="btn-box">
-          <div class="login">
+          <button class="login">
             登录
-          </div>
-          <div class="sign-in">
+          </button>
+          <button class="sign-in">
             注册
-          </div>
+          </button>
         </div>
       </div>
+    </div>
+    <div class="wrap recommend">
+      <div class="title">
+        猜你喜欢
+      </div>
+      <!-- <div class="content">
+        <div class="item">
+
+        </div>
+      </div> -->
     </div>
   </div>
   <div class="footer">
