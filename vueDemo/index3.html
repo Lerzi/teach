@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vue3</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    {{username}}
+    {{password}}
+    <input type="text" v-model="username">
+    <input type="password" v-model="password">
+    <button @click="login">登录</button>
+  </div>
+</body>
+<script>
+  var app = new Vue({
+    el: '#app',
+    // 数据
+    data: {
+      username: '',
+      password: ''
+    },
+    methods: {
+      login() {
+        if (this.username == '宝宝' && this.password == '123') {
+          alert('你登录成功了')
+        } else {
+          alert('用户名或者密码错误')
+        }
+        // alert(this.username + this.password)
+      }
+    },
+  })
+</script>
+
+</html>
