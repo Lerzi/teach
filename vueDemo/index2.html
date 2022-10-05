@@ -13,20 +13,25 @@
   <div id="app">
     <div>{{message}}</div>
     <!-- 点击事件 -->
-    <button v-on:click="reverseMessage">点我</button>
+    <button @click="reverseMessage">点我</button>
   </div>
 </body>
 <script>
   var app = new Vue({
     el: '#app',
+    // 数据
     data: {
       message: '我是文字',
     },
     // 定义方法也叫函数用的
     methods: {
       reverseMessage() {
-        this.message = '我是傻逼'
-      }
+        if (this.message == '我是文字') {
+          this.message = '我是傻逼'
+        } else {
+          this.message = '我是文字'
+        }
+      },
     }
   })
 </script>
